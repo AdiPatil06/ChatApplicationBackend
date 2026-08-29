@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/build.gradle (snapshot).kts">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/build.gradle (snapshot).kts" />
+              <option name="originalContent" value="import org.jetbrains.kotlin.gradle.tasks.KotlinCompile&#10;&#10;plugins {&#10;    kotlin(&quot;jvm&quot;) version &quot;1.9.10&quot;&#10;    kotlin(&quot;plugin.serialization&quot;) version &quot;1.9.10&quot;&#10;    application&#10;}&#10;&#10;group = &quot;com.example&quot;&#10;version = &quot;0.1.0&quot;&#10;&#10;repositories {&#10;    mavenCentral()&#10;}&#10;&#10;val ktor_version = &quot;2.3.4&quot;&#10;val logback_version = &quot;1.4.7&quot;&#10;&#10;dependencies {&#10;    implementation(&quot;io.ktor:ktor-server-core:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-server-netty:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-server-websockets:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-server-content-negotiation:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-serialization-kotlinx-json:$ktor_version&quot;)&#10;    implementation(&quot;org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0&quot;)&#10;    implementation(&quot;ch.qos.logback:logback-classic:$logback_version&quot;)&#10;&#10;    testImplementation(kotlin(&quot;test&quot;))&#10;}&#10;&#10;application {&#10;    mainClass.set(&quot;com.example.ApplicationKt&quot;)&#10;}&#10;&#10;tasks.withType&lt;KotlinCompile&gt; {&#10;    kotlinOptions.jvmTarget = &quot;17&quot;&#10;}&#10;&#10;" />
+              <option name="updatedContent" value="import org.jetbrains.kotlin.gradle.tasks.KotlinCompile&#10;&#10;plugins {&#10;    kotlin(&quot;jvm&quot;) version &quot;1.9.10&quot;&#10;    kotlin(&quot;plugin.serialization&quot;) version &quot;1.9.10&quot;&#10;    application&#10;}&#10;&#10;group = &quot;com.example&quot;&#10;version = &quot;0.1.0&quot;&#10;&#10;repositories {&#10;    mavenCentral()&#10;}&#10;&#10;val ktor_version = &quot;2.3.4&quot;&#10;val logback_version = &quot;1.4.7&quot;&#10;&#10;dependencies {&#10;    implementation(&quot;io.ktor:ktor-server-core:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-server-netty:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-server-websockets:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-server-content-negotiation:$ktor_version&quot;)&#10;    implementation(&quot;io.ktor:ktor-serialization-kotlinx-json:$ktor_version&quot;)&#10;    implementation(&quot;org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0&quot;)&#10;    implementation(&quot;ch.qos.logback:logback-classic:$logback_version&quot;)&#10;&#10;    testImplementation(kotlin(&quot;test&quot;))&#10;}&#10;&#10;application {&#10;    mainClass.set(&quot;com.example.ApplicationKt&quot;)&#10;}&#10;&#10;tasks.withType&lt;KotlinCompile&gt; {&#10;    kotlinOptions.jvmTarget = &quot;17&quot;&#10;    // Explicitly set Kotlin language version to a stable 1.9 to avoid experimental 2.4 warnings&#10;    // and keep compatibility with the Kotlin Gradle plugin used above.&#10;    kotlinOptions.languageVersion = &quot;1.9&quot;&#10;}&#10;&#10;kotlin {&#10;    // ensure the JVM toolchain used for compilation is Java 17&#10;    jvmToolchain(17)&#10;}&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
