@@ -49,7 +49,7 @@ The Pulse Chat Application Backend is a WebSocket-based server that enables:
 
 1. **Clone the repository:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/AdiPatil06/ChatApplicationBackend.git
 cd ChatApplicationBackend
 ```
 
@@ -212,7 +212,7 @@ src/main/kotlin/
 
 ## 📄 License
 
-[Add your license here]
+This project is open source and available for personal and educational use.
 
 ## 📞 Support
 
